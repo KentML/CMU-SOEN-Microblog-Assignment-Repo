@@ -1,7 +1,8 @@
 {% extends 'bootstrap/base.html' %}
 
 {% block html_attribs %} lang="en-US" xml:lang="en-US"{% endblock %}
-    {% if title %}{{ title }} - Microblog{% else %}{{ _('Welcome to Microblog') }}{% endif %}
+{% block title %}
+{% if title %}{{ title }} - Microblog{% else %}{{ _('Welcome to Microblog') }}{% endif %}
 {% endblock %}
 
 {% block navbar %}
